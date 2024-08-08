@@ -1,0 +1,98 @@
+*{
+    font-family: "Quicksand", sans-serif;
+    box-sizing: border-box;
+}
+.fs-4{
+    font-family: "Bebas Neue", sans-serif;
+}
+header{
+    background-color: #468585;
+}
+header span{
+    color: aliceblue;
+}
+#icon-perfil{
+    border-radius: 10%;
+}
+.nav-item a{
+    color: white;
+}
+/* Link visitado */
+.nav-item a:visited{
+    color: white;
+}
+.nav-item a:hover{
+    color: #9CDBA6;
+}
+#nav-button{
+    background-color: #50B498;
+}
+.icon-square .bi{
+    color: #468585;
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+    font-size: 1em;
+}
+.img-proyecto1{
+    background-image: url('assets/clon-pinterest.jpeg');
+    background-size: contain;
+    background-repeat: repeat;
+    height: 300px;
+    z-index: 1;
+}
+.img-proyecto1 .text-white {
+    z-index: 2;
+}
+.img-proyecto1::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); 
+    
+}
+.img-proyecto1 .overlay-explanation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #E1F0DA; 
+    color: rgb(5, 5, 5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    opacity: 0;
+    z-index: 3;
+    transition: opacity 0.3s;
+}
+.img-proyecto1:hover .overlay-explanation {
+    opacity: 1;
+}
+.icon-habilidades{
+    color:#468585;
+    font-size: 4em;
+}
+
+footer{
+    background-color: #E0FBE2;
+}
+footer .icon-footer{
+    color: #468585;
+}
+footer p{
+    color: #819191;
+}
+footer p a{
+    color: #468585;
+}
+.fondo-contacto{
+    background-color: #D4E7C5;
+}
+#app{
+    color: #468585;
+    font-size: 30px;
+}
