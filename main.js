@@ -10,3 +10,19 @@ typewriter.typeString('Ingeniera en Sistemas Computacionales')
     .typeString('Desarrolladora Front-end Jr')
     .pauseFor(2500)
     .start();
+
+// Boton
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    let backToTopBtn = document.getElementById("botonArriba");
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        backToTopBtn.style.display = "block";
+    } else {
+        backToTopBtn.style.display = "none";
+    }
+}
+document.getElementById('botonArriba').onclick = function() {
+    document.documentElement.scrollTop = 0;
+}
+

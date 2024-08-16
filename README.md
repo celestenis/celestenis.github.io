@@ -4,7 +4,7 @@
 Proyecto creado durante el bootcamp de Tecnolochicas PRO, es daptable a distintos dispositivos o tamaños de pantalla.
 El propósito de está página web es mostrar mi portafolio de proyectos como desarrolladora web. 💗
 
-Podrás encontrarlo aquí [Portafolio](https://anelmontes.github.io/).
+Podrás encontrarlo aquí [Portafolio](https://github.com/celestenis).
 
 ## Tecnologías
 
@@ -22,4 +22,4 @@ Podrás encontrarlo aquí [Portafolio](https://anelmontes.github.io/).
 
 ### Captura del proyecto
 
-![Captura del proyecto](/assets/CapturaPortafolio.PNG)
+![Captura del proyecto](/assets/captura.jpg)

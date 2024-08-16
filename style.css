@@ -5,94 +5,140 @@
 .fs-4{
     font-family: "Bebas Neue", sans-serif;
 }
+h2{
+    font-family: "Bebas Neue", sans-serif;
+    color: #6e5b6f;
+}
+
+h3{
+    color: #EECEB9;
+    text-shadow: 
+        -1px -1px 0px white,  
+        1px -1px 0px white,   
+        -1px 1px 0px white,   
+        1px 1px 0px white;    
+    
+}
 header{
-    background-color: #468585;
+    background-color: #987D9A;
 }
 header span{
-    color: aliceblue;
+    color: #FEFBD8
 }
 #icon-perfil{
-    border-radius: 10%;
+    border-radius: 75%;
 }
 .nav-item a{
-    color: white;
+    color: #FEFBD8;
 }
 /* Link visitado */
 .nav-item a:visited{
     color: white;
 }
 .nav-item a:hover{
-    color: #9CDBA6;
+    color: #FEFBD8;
 }
 #nav-button{
-    background-color: #50B498;
+    background-color: #BB9AB1;
 }
 .icon-square .bi{
-    color: #468585;
+    color: #987D9A;
     width: auto;
     height: auto;
-    border-radius: 5px;
-    font-size: 1em;
+    border-radius: 80px;
+    font-size: 27px;
 }
 .img-proyecto1{
     background-image: url('assets/clon-pinterest.jpeg');
     background-size: contain;
     background-repeat: repeat;
     height: 300px;
-    z-index: 1;
 }
-.img-proyecto1 .text-white {
+
+.img-proyecto2{
+    background-image: url('assets/hola-mundo.jpg');
+    background-size: contain;
+    background-repeat: repeat;
+    height: 300px;
+}
+.img-proyecto3{
+    background-image: url('assets/tareas-pendientes.jpg');
+    background-size: contain;
+    background-repeat: repeat;
+    height: 300px;
+}
+.fondo .text-white {
     z-index: 2;
 }
-.img-proyecto1::before {
+.fondo::after {
     content: '';
     position: absolute;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.6); 
+    background: rgba(36, 33, 36, 0.45);
+    z-index: 1; 
+    pointer-events: none; 
     
 }
-.img-proyecto1 .overlay-explanation {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #E1F0DA; 
-    color: rgb(5, 5, 5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 20px;
-    opacity: 0;
-    z-index: 3;
-    transition: opacity 0.3s;
-}
-.img-proyecto1:hover .overlay-explanation {
-    opacity: 1;
-}
 .icon-habilidades{
-    color:#468585;
+    color:#BB9AB1;
     font-size: 4em;
 }
-
 footer{
-    background-color: #E0FBE2;
+    background-color: #987D9A;
 }
 footer .icon-footer{
-    color: #468585;
+    color: #BB9AB1;
 }
 footer p{
-    color: #819191;
+    color: #c8d1d1;
 }
 footer p a{
-    color: #468585;
+    color: #DEF9C4;
 }
 .fondo-contacto{
-    background-color: #D4E7C5;
+    background-color: #fefbd86c;
 }
 #app{
-    color: #468585;
+    color: #987D9A;
     font-size: 30px;
+}
+.card-title{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.card{
+    background-color: #fefbd8a9;
+}
+.bgr{
+    background-color: #bb9ab1b7;
+}
+#botonArriba{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    outline: none;
+    background-color: #BB9AB1;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border: none;
+    display: none; 
+}
+#botonArriba:hover{
+    background-color: #EECEB9;
+}
+#botonArriba i{
+    font-size: 22px;
+}
+.imgs{
+    width: 15rem;
+    text-align: center;
+}
+.card-text{
+    font-size: 14px;
+}
+.card{
+    height: 530px;
 }
