@@ -1,278 +1,706 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- FONT GOOGLE -->
+    <title>Celeste N. I. | Analista de Datos & Soporte Técnico IT</title>
+
+    <!-- Meta Tags para SEO -->
+    <meta name="description" content="Portafolio profesional de Celeste Nicolás Isidro. Ingeniera en Sistemas Computacionales enfocada en el Análisis de Datos, SQL, Soporte Técnico e Infraestructura IT.">
+    <meta name="author" content="Celeste Nicolás Isidro">
+    
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="assets/code-heart.svg" type="image/x-icon">
+
+    <!-- GOOGLE FONTS: Plus Jakarta Sans & Outfit -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- BOOTSTRAP ICONS & BOOTSTRAP 5 CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="shortcut icon" href="/assets/code-heart.svg" type="image/x-icon">
-    <!--CDN bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- HOJA DE ESTILOS PERSONALIZADA -->
     <link rel="stylesheet" href="style.css">
-    <title>Celeste N. I.</title>
-    
 </head>
 <body>
-    
-    <!--Script boostrap-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <header class="d-flex flex-wrap justify-content-center py-3 mb-4">
-        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-            <svg class="bi me-" width="40" height="32">
-                <use xlink:href="#bootstrap"></use>
-            </svg>
-            <span class="fs-4">Portafolio</span>
+
+    <!-- NAVBAR FLOTANTE CON GLASSMORPHISM -->
+    <header class="navbar navbar-expand-lg fixed-top custom-navbar">
+      <div class="container">
+        <a href="#sobre-mi" class="navbar-brand d-flex align-items-center gap-2">
+            <div class="logo-icon">
+              <i class="bi bi-bar-chart-line-fill"></i>
+            </div>
+            <span class="logo-text">Portafolio /<span class="gradient-text"> Celeste</span></span>
         </a>
-        <ul class="nav nav-pills">
-            <li class="nav-item"><a id="nav-button" href="#sobre-mi" class="nav-link active" aria-current="page">Yo</a></li>
-            <li class="nav-item"><a href="#habilidades" class="nav-link">Habilidades</a></li>
-            <li class="nav-item"><a href="#proyectos" class="nav-link">Proyectos</a></li>
-            <li class="nav-item"><a href="#testimonios" class="nav-link">Testimonios</a></li>
-            <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
-        </ul> 
+
+        <button class="navbar-toggler border-0 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list fs-1"></i>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav align-items-center gap-lg-3">
+                <li class="nav-item"><a href="#sobre-mi" class="nav-link active">Sobre mí</a></li>
+                <li class="nav-item"><a href="#habilidades" class="nav-link">Habilidades</a></li>
+                <li class="nav-item"><a href="#cursos" class="nav-link">Cursos</a></li>
+                <li class="nav-item"><a href="#proyectos" class="nav-link">Proyectos</a></li>
+                <li class="nav-item"><a href="#testimonios" class="nav-link">Testimonios</a></li>
+                <li class="nav-item ms-lg-2">
+                  <a href="#contacto" class="btn btn-gradient-sm">Contacto</a>
+                </li>
+            </ul> 
+        </div>
+      </div>
     </header>
-    
+
     <main>
-        <section id="sobre-mi">
-            <div class="px-4 py-5 text-center">
-            <img id="icon-perfil" class="d-block mx-auto mb-5 shadow-lg" src="assets/celeste2.png" alt="" width="200">
-            <h1 class="display-5 fw-bold text-body-emphasis">Celeste Nicolás Isidro</h1>
-            <h2 id="app"></h2>
-            <div class="col-lg-6 mx-auto">
-              <p class="lead mb-4 ">Estudiante del Instituto Tecnológico de Tehuacán | TECNM</p>
-              <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                <a href="/assets/Curriculum.pdf" class="btn btn-outline-secondary btn-lg px-4" download="Celeste Nicolás Isidro-CV.pdf">Sobre mí</a>
+        <!-- HERO SECTION -->
+        <section id="sobre-mi" class="hero-section d-flex align-items-center justify-content-center min-vh-100">
+            <div class="container py-5 text-center position-relative z-2">
+
+              <!-- AVATAR CON ANILLO BRILLANTE -->
+              <div class="reveal position-relative d-inline-block my-3">
+                <div class="avatar-glow"></div>
+                <img id="icon-perfil" class="profile-avatar shadow-lg" src="assets/celeste2.png" alt="Celeste Nicolás Isidro" width="180" height="180">
               </div>
+
+              <!-- TÍTULOS Y NOMBRE -->
+              <div class="reveal mt-3">
+                <h1 class="hero-name display-4 fw-extrabold text-white">Celeste Nicolás Isidro</h1>
+                <div class="typewriter-container">
+                  <h2 id="app" class="typewriter-text"></h2>
+                </div>
+              </div>
+
+              <!-- BADGE DISPONIBILIDAD -->
+              <div class="reveal">
+                <span class="status-badge mb-4">
+                  <span class="status-dot"></span> Disponible para oportunidades laborales
+                </span>
+              </div>
+
+              <!-- DESCRIPCIÓN Y ROL -->
+              <div class="col-lg-8 mx-auto reveal mt-3">
+                <p class="hero-bio lead mb-4">
+                  Enfocada en el mantenimiento, diagnóstico y optimización de infraestructura informática. Cuento con experiencia en Soporte Técnico y capacidades analíticas aplicadas al procesamiento de datos con SQL, Python y Excel para la solución efectiva de problemas.
+                </p>
+                <!-- BOTONES DE ACCIÓN -->
+                <div class="d-flex flex-wrap justify-content-center gap-3 mb-4">
+                  <a href="assets/Curriculum.pdf" download="Celeste_Nicolas_CV.pdf" class="btn btn-gradient btn-lg">
+                    <i class="bi bi-download me-2"></i>Descargar CV
+                  </a>
+                  <a href="#contacto" class="btn btn-glass btn-lg">
+                    <i class="bi bi-chat-dots me-2"></i>Contáctame
+                  </a>
+                </div>
+
+                <!-- ICONOS DE REDES SOCIALES -->
+                <div class="social-links-hero d-flex justify-content-center gap-3">
+                  <a href="https://github.com/celestenis" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="https://www.linkedin.com/in/celestenicolas/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+                  <a href="https://www.facebook.com/celeztenicolaz" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Facebook">
+                    <i class="bi bi-facebook"></i>
+                  </a>
+                  <a href="mailto:celeztenicolaz@gmail.com" class="social-icon" aria-label="Correo">
+                    <i class="bi bi-envelope-fill"></i>
+                  </a>
+                </div>
+              </div>
+
             </div>
-          </div>
+
+            <!-- MESH GRADIENT BACKGROUND -->
+            <div class="hero-bg-glow hero-glow-1"></div>
+            <div class="hero-bg-glow hero-glow-2"></div>
         </section>
-        <section id="habilidades">
-            <div class="container px-4 py-3" id="hanging-icons">
-                <h2 class="pb-2 border-4 border-bottom">Habilidades</h2>
+
+        <!-- SECCIÓN HABILIDADES & TECH STACK -->
+        <section id="habilidades" class="py-5">
+            <div class="container px-4 py-4">
+                <div class="section-title-wrapper text-center mb-5 reveal">
+                  <span class="section-tag">Especialidades</span>
+                  <h2 class="section-title">Habilidades & Herramientas Técnicas</h2>
+                  <div class="title-bar mx-auto"></div>
+                </div>
                 
-                <div id="habilidadesMore" class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-                  <div class="col d-flex align-items-start">
-                    <div class="icon-square d-inline-flex align-items-center justify-content-center fs-4 text-body-emphasis flex-shrink-0 me-3">
-                        <i class="bi bi-laptop"></i>
-                    </div>
-                    <div>
-                      <h3 class="fs-2 text-body-emphasis">Desarrollo Web</h3>
-                      <p>He creado sitios web responivos aplicando los conocimientos obtenidos durante el bootcamp de Tecnolochicas PRO.</p>
-                    </div>
-                  </div>
-                  <div class="col d-flex align-items-start">
-                    <div class="icon-square d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-                        <i class="bi bi-backpack"></i>
-                    </div>
-                    <div>
-                      <h3 class="fs-2 text-body-emphasis">Estudiante</h3>
-                      <p>Actualmente me encuentro estudiando en mi último semestre de Ingeniería en Sistemas Computacionales.</p>
+                <!-- ÁREA DE ANÁLISIS DE DATOS -->
+                <h3 class="subsection-title mb-4 reveal"><i class="bi bi-database-fill-gear me-2 gradient-icon"></i>Análisis de Datos & Bases de Datos</h3>
+                <div class="row g-4 mb-5 reveal">
+                  <div class="col-6 col-md-4 col-lg-3">
+                    <div class="tech-card text-center p-3 h-100">
+                      <i class="bi bi-database-fill tech-icon text-cyan"></i>
+                      <h4 class="tech-name mt-2">SQL / MySQL / MongoDB</h4>
+                      <span class="tech-badge">Consultas</span>
                     </div>
                   </div>
-                  <div class="col d-flex align-items-start">
-                    <div class="icon-square d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-                        <i class="bi bi-person-fill-check"></i>
-                    </div>
-                    <div>
-                      <h3 class="fs-2 text-body-emphasis">Trabajo en equipo</h3>
-                      <p>Me gusta trabajar en equipo para obtener nuevas ideas e implementarlas en los trabajos o proyectos, así como aprender de los demás.</p>
+                  <div class="col-6 col-md-4 col-lg-3">
+                    <div class="tech-card text-center p-3 h-100">
+                      <i class="bi bi-filetype-py tech-icon text-yellow"></i>
+                      <h4 class="tech-name mt-2">Python</h4>
+                      <span class="tech-badge">Pandas & Limpieza de Datos</span>
                     </div>
                   </div>
-                  <div class="col d-flex align-items-start">
-                    <div class="icon-square d-inline-flex align-items-center justify-content-center fs-4 text-body-emphasis flex-shrink-0 me-3">
-                      <i class="bi bi-list-check"></i>
-                    </div>
-                    <div>
-                      <h3 class="fs-2 text-body-emphasis">Capacidad de análisis</h3>
-                      <p>Me gusta evaluar los aspectos, identicar y tomar las decisiones de acuerdo a la lógica.</p>
+                  <div class="col-6 col-md-4 col-lg-3">
+                    <div class="tech-card text-center p-3 h-100">
+                      <i class="bi bi-file-earmark-excel-fill tech-icon text-green"></i>
+                      <h4 class="tech-name mt-2">Excel / Paquete Office</h4>
+                      <span class="tech-badge">Tablas Dinámicas & Fórmulas</span>
                     </div>
                   </div>
-                  <div class="col d-flex align-items-start">
-                    <div class="icon-square d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-                      <i class="bi bi-chat-square-dots-fill"></i>
-                    </div>
-                    <div>
-                      <h3 class="fs-2 text-body-emphasis">Comunicación</h3>
-                      <p>Escucho las ideas de las personas, además opino de acuerdo a la lógica y creatividad.</p>
+                  <div class="col-6 col-md-4 col-lg-3">
+                    <div class="tech-card text-center p-3 h-100">
+                      <i class="bi bi-pie-chart-fill tech-icon text-purple"></i>
+                      <h4 class="tech-name mt-2">Power BI / Dashboards</h4>
+                      <span class="tech-badge">Visualización & KPIs</span>
                     </div>
                   </div>
-                  <div class="col d-flex align-items-start">
-                    <div class="icon-square d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-                      <i class="bi bi-clipboard2-heart-fill"></i>
+                </div>
+
+                <!-- ÁREA DE SOPORTE TÉCNICO & IT -->
+                <h3 class="subsection-title mb-4 reveal"><i class="bi bi-tools me-2 gradient-icon"></i>Soporte Técnico & Sistemas IT</h3>
+                <div class="row g-4 mb-5 reveal">
+                  <div class="col-6 col-md-4 col-lg-3">
+                    <div class="tech-card text-center p-3 h-100">
+                      <i class="bi bi-pc-display-horizontal tech-icon text-blue"></i>
+                      <h4 class="tech-name mt-2">Diagnóstico Hardware & SW</h4>
+                      <span class="tech-badge">Mantenimiento</span>
                     </div>
-                    <div>
-                      <h3 class="fs-2 text-body-emphasis">Creatividad</h3>
-                      <p>Me gusta dar ideas y desenvolverme en el aspecto creativo.</p>
+                  </div>
+                  <div class="col-6 col-md-4 col-lg-3">
+                    <div class="tech-card text-center p-3 h-100">
+                      <i class="bi bi-headset tech-icon text-cyan"></i>
+                      <h4 class="tech-name mt-2">Atención & Helpdesk</h4>
+                      <span class="tech-badge">Soporte a Usuarios Finales</span>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-4 col-lg-3">
+                    <div class="tech-card text-center p-3 h-100">
+                      <i class="bi bi-windows tech-icon text-blue"></i>
+                      <h4 class="tech-name mt-2">Sistemas Operativos</h4>
+                      <span class="tech-badge">Windows Server / Linux</span>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-4 col-lg-3">
+                    <div class="tech-card text-center p-3 h-100">
+                      <i class="bi bi-router-fill tech-icon text-orange"></i>
+                      <h4 class="tech-name mt-2">Redes & Conectividad</h4>
+                      <span class="tech-badge">Configuración Básica de Red</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- HABILIDADES COMPLEMENTARIAS & HOBBIES -->
+                <h3 class="subsection-title mb-4 reveal"><i class="bi bi-code-slash me-2 gradient-icon"></i>Desarrollo Web & Herramientas (Complementario)</h3>
+                <div class="row g-4 mb-5 reveal">
+                  <div class="col-6 col-md-4 col-lg-3">
+                    <div class="tech-card text-center p-3 h-100">
+                      <i class="bi bi-filetype-html tech-icon text-orange"></i>
+                      <h4 class="tech-name mt-2">HTML5 / CSS3</h4>
+                      <span class="tech-badge">Maquetación Web</span>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-4 col-lg-3">
+                    <div class="tech-card text-center p-3 h-100">
+                      <i class="bi bi-filetype-js tech-icon text-yellow"></i>
+                      <h4 class="tech-name mt-2">JavaScript</h4>
+                      <span class="tech-badge">Lógica Front-end</span>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-4 col-lg-3">
+                    <div class="tech-card text-center p-3 h-100">
+                      <i class="bi bi-git tech-icon text-red"></i>
+                      <h4 class="tech-name mt-2">Git & GitHub</h4>
+                      <span class="tech-badge">Control de Versiones</span>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-4 col-lg-3">
+                    <div class="tech-card text-center p-3 h-100">
+                      <i class="bi bi-award-fill tech-icon text-purple"></i>
+                      <h4 class="tech-name mt-2">Tecnolochicas PRO</h4>
+                      <span class="tech-badge">Formación Bootcamp</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- SOFT SKILLS -->
+                <h3 class="subsection-title mb-4 reveal"><i class="bi bi-stars me-2 gradient-icon"></i>Fortalezas Profesionales</h3>
+                <div class="row g-4 reveal">
+                  <div class="col-md-6 col-lg-4">
+                    <div class="skill-glass-card p-4 h-100">
+                      <div class="icon-box mb-3">
+                        <i class="bi bi-graph-up-arrow"></i>
+                      </div>
+                      <h4>Análisis Lógico de Datos</h4>
+                      <p>Habilidad para procesar datos, identificar inconsistencias, extraer patrones clave y apoyar la toma de decisiones.</p>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 col-lg-4">
+                    <div class="skill-glass-card p-4 h-100">
+                      <div class="icon-box mb-3">
+                        <i class="bi bi-cpu-fill"></i>
+                      </div>
+                      <h4>Resolución de Incidencias (Troubleshooting)</h4>
+                      <p>Metodología estructurada para diagnosticar fallas en equipos, programas informáticos y configuraciones de red.</p>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 col-lg-4">
+                    <div class="skill-glass-card p-4 h-100">
+                      <div class="icon-box mb-3">
+                        <i class="bi bi-person-check-fill"></i>
+                      </div>
+                      <h4>Atención & Soporte al Usuario</h4>
+                      <p>Empatía y claridad comunicativa para asesorar a usuarios finales y resolver problemas técnicos de forma ágil.</p>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 col-lg-4">
+                    <div class="skill-glass-card p-4 h-100">
+                      <div class="icon-box mb-3">
+                        <i class="bi bi-people-fill"></i>
+                      </div>
+                      <h4>Trabajo Colaborativo</h4>
+                      <p>Adaptabilidad para trabajar en equipos multidisciplinarios de TI, compartiendo conocimientos y cumpliendo objetivos.</p>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 col-lg-4">
+                    <div class="skill-glass-card p-4 h-100">
+                      <div class="icon-box mb-3">
+                        <i class="bi bi-gear-wide-connected"></i>
+                      </div>
+                      <h4>Mantenimiento de Sistemas</h4>
+                      <p>Prevención y corrección de errores en hardware/software para asegurar la disponibilidad continua de los equipos.</p>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 col-lg-4">
+                    <div class="skill-glass-card p-4 h-100">
+                      <div class="icon-box mb-3">
+                        <i class="bi bi-mortarboard-fill"></i>
+                      </div>
+                      <h4>Formación en Sistemas (ITT)</h4>
+                      <p>Conocimientos integrales en arquitectura de computadoras, redes, bases de datos y desarrollo de software.</p>
                     </div>
                   </div>
                 </div>
               </div>
         </section>
-        <section id="proyectos">
-            <div class="container px-4 py-3" id="custom-cards">
-                <h2 class="pb-2 border-bottom border-4 letra-style">Proyectos</h2>
-                <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-                    <div class="col">
-                        <div class="img-proyecto1 fondo card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow border-0">
-                            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Clon Pinterest</h3>
-                              <ul class="d-flex list-unstyled mt-auto">
-                                <li class="me-auto">
-                                  <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32"
-                                    class="rounded-circle border border-white">
-                                </li>
-                                <li class="d-flex align-items-center">
-                                  <a href="https://pinterest-clone-celestenis.vercel.app/" class="btn btn-outline-light" target="_blank">Visitar</a>
-                                </li>
-                              </ul>
+
+        <!-- SECCIÓN CURSOS & CERTIFICACIONES (DESPLEGABLE) -->
+        <section id="cursos" class="py-5">
+            <div class="container px-4 py-4">
+                <div class="section-title-wrapper text-center mb-4 reveal">
+                  <span class="section-tag">Formación Continua</span>
+                  <h2 class="section-title">Cursos & Certificaciones</h2>
+                  <div class="title-bar mx-auto mb-4"></div>
+                  <p class="col-lg-8 mx-auto text-secondary mb-4">
+                    Capacitaciones complementarias en Análisis de Datos, Soporte Técnico IT y desarrollo de software.
+                  </p>
+                  
+                  <!-- BOTÓN TOGGLE DESPLEGABLE -->
+                  <button class="btn btn-glass btn-lg rounded-pill px-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCursos" aria-expanded="false" aria-controls="collapseCursos" id="btnToggleCursos">
+                    <i class="bi bi-journal-bookmark-fill me-2 gradient-icon"></i>
+                    <span id="btnToggleCursosText">Ver Cursos y Certificados</span>
+                    <i class="bi bi-chevron-down ms-2 transition-icon" id="iconToggleCursos"></i>
+                  </button>
+                </div>
+
+                <!-- CONTENIDO DESPLEGABLE -->
+                <div class="collapse mt-4" id="collapseCursos">
+                  <div class="row g-4">
+
+                    <!-- CURSO 1 -->
+                    <div class="col-md-6 col-lg-4">
+                      <div class="course-glass-card p-4 h-100">
+                        <div class="d-flex align-items-center justify-content-between mb-3">
+                          <span class="badge bg-cyan-subtle text-cyan">Análisis de Datos</span>
+                          <span class="status-chip"><i class="bi bi-check-circle-fill text-success me-1"></i>Completado</span>
+                        </div>
+                        <h4 class="course-title fs-5 fw-bold text-white mb-2">Data Scientist Jr</h4>
+                        <p class="course-institution text-cyan small mb-2"><i class="bi bi-award me-1"></i>Tecnolochicas PRO</p>
+                        <p class="course-desc small text-muted mb-3">
+                          Extracción de datos mediante consultas SQL (JOINs, agrupamientos), procesamiento básico con Python y reportes.
+                        </p>
+                        <div class="course-tags">
+                          <span class="tag-badge">SQL/MongoDB</span>
+                          <span class="tag-badge">Python</span>
+                          <span class="tag-badge">Bases de Datos</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- CURSO 2 -->
+                    <div class="col-md-6 col-lg-4">
+                      <div class="course-glass-card p-4 h-100">
+                        <div class="d-flex align-items-center justify-content-between mb-3">
+                          <span class="badge bg-purple-subtle text-purple">Bootcamp</span>
+                          <span class="status-chip"><i class="bi bi-check-circle-fill text-success me-1"></i>Completado</span>
+                        </div>
+                        <h4 class="course-title fs-5 fw-bold text-white mb-2">Desarrollo Web Frontend</h4>
+                        <p class="course-institution text-cyan small mb-2"><i class="bi bi-building me-1"></i>Tecnolochicas Pro / Fundación Televisa</p>
+                        <p class="course-desc small text-muted mb-3">
+                          Capacitación intensiva en desarrollo web frontend, trabajo en equipo, metodologías agiles y habilidades digitales clave.
+                        </p>
+                        <div class="course-tags">
+                          <span class="tag-badge">Desarrollo Web</span>
+                          <span class="tag-badge">Lógica Prog.</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- CURSO 3 -->
+                    <div class="col-md-6 col-lg-4">
+                      <div class="course-glass-card p-4 h-100">
+                        <div class="d-flex align-items-center justify-content-between mb-3">
+                          <span class="badge bg-green-subtle text-green">Excel</span>
+                          <span class="status-chip"><i class="bi bi-check-circle-fill text-success me-1"></i>Completado</span>
+                        </div>
+                        <h4 class="course-title fs-5 fw-bold text-white mb-2">Excel (Inter. - Avanzado)</h4>
+                        <p class="course-institution text-cyan small mb-2"><i class="bi bi-file-earmark-spreadsheet me-1"></i>Santander Open Academy</p>
+                        <p class="course-desc small text-muted mb-3">
+                          Dominio de tablas dinámicas, funciones de búsqueda (BUSCARV/X), filtrado de volúmenes y dashboards.
+                        </p>
+                        <div class="course-tags">
+                          <span class="tag-badge">Excel</span>
+                          <span class="tag-badge">Tablas Dinámicas</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- CURSO 4 -->
+                    <div class="col-md-6 col-lg-4">
+                      <div class="course-glass-card p-4 h-100">
+                        <div class="d-flex align-items-center justify-content-between mb-3">
+                          <span class="badge bg-blue-subtle text-blue">Power BI</span>
+                          <span class="status-chip"><i class="bi bi-clock-history text-warning me-1"></i>En curso</span>
+                        </div>
+                        <h4 class="course-title fs-5 fw-bold text-white mb-2">Power BI para Análisis de Datos</h4>
+                        <p class="course-institution text-cyan small mb-2"><i class="bi bi-bar-chart me-1"></i>Santander Open Academy</p>
+                        <p class="course-desc small text-muted mb-3">
+                          Creación de reportes y dashboards interactivos, modelado de datos y visualización de información.
+                        </p>
+                        <div class="course-tags">
+                          <span class="tag-badge">Power BI</span>
+                          <span class="tag-badge">Análisis de Datos</span>
+                          <span class="tag-badge">Visualización</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- CURSO 5 -->
+                    <div class="col-md-6 col-lg-4">
+                      <div class="course-glass-card p-4 h-100">
+                        <div class="d-flex align-items-center justify-content-between mb-3">
+                          <span class="badge bg-blue-subtle text-blue">Infraestructura</span>
+                          <span class="status-chip"><i class="bi bi-check-circle-fill text-success me-1"></i>Completado</span>
+                        </div>
+                        <h4 class="course-title fs-5 fw-bold text-white mb-2">Redes & Sistemas Operativos</h4>
+                        <p class="course-institution text-cyan small mb-2"><i class="bi bi-hdd-network me-1"></i>Instituto Tecnológico de Tehuacán</p>
+                        <p class="course-desc small text-muted mb-3">
+                          Configuración de redes de datos, administración de sistemas Windows/Linux y protocolos de conectividad.
+                        </p>
+                        <div class="course-tags">
+                          <span class="tag-badge">Redes</span>
+                          <span class="tag-badge">Windows</span>
+                          <span class="tag-badge">Linux</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- CURSO 6 -->
+                    <div class="col-md-6 col-lg-4">
+                      <div class="course-glass-card p-4 h-100">
+                        <div class="d-flex align-items-center justify-content-between mb-3">
+                          <span class="badge bg-purple-subtle text-purple">Académico</span>
+                          <span class="status-chip"><i class="bi bi-check-circle-fill text-success me-1"></i>Completado</span>
+                        </div>
+                        <h4 class="course-title fs-5 fw-bold text-white mb-2">Ingeniería en Sistemas Computacionales</h4>
+                        <p class="course-institution text-cyan small mb-2"><i class="bi bi-mortarboard me-1"></i>TECNM | ITT</p>
+                        <p class="course-desc small text-muted mb-3">
+                          Ingeniería enfocada en las tecnologías de la información y la comunicación.
+                        </p>
+                        <div class="course-tags">
+                          <span class="tag-badge">Ingeniería</span>
+                          <span class="tag-badge">Sistemas</span>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECCIÓN PROYECTOS Y DESARROLLOS COMPLEMENTARIOS -->
+        <section id="proyectos" class="py-5">
+            <div class="container px-4 py-4">
+                <div class="section-title-wrapper text-center mb-5 reveal">
+                  <span class="section-tag">Portafolio Práctico</span>
+                  <h2 class="section-title">Proyectos & Desarrollos Prácticos</h2>
+                  <div class="title-bar mx-auto"></div>
+                </div>
+
+                <div class="row g-4 reveal">
+                    <!-- PROYECTO 1 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="project-card glass-card h-100 overflow-hidden d-flex flex-column">
+                            <div class="project-img-wrapper">
+                              <img src="assets/tareas-pendientes.jpg" alt="Gestion de Tareas y Datos" class="project-img">
+                              <div class="project-overlay">
+                                <a href="https://tareas-pendientes-gold.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-light btn-sm rounded-pill px-3">
+                                  <i class="bi bi-box-arrow-up-right me-1"></i> Ver Proyecto
+                                </a>
+                              </div>
+                            </div>
+                            <div class="project-body p-4 d-flex flex-column flex-grow-1">
+                              <div class="project-tags mb-2">
+                                <span class="tag-badge">Lógica JS</span>
+                                <span class="tag-badge">Manejo de Datos</span>
+                                <span class="tag-badge">DOM & Storage</span>
+                              </div>
+                              <h3 class="project-title fs-4 fw-bold">Gestor de Tareas & Persistencia</h3>
+                              <p class="project-desc text-muted flex-grow-1">
+                                Aplicación para la administración de eventos y tareas con lógica de almacenamiento local (LocalStorage) y filtrado dinámico de estados.
+                              </p>
+                              <div class="project-footer pt-3 mt-auto border-top border-secondary-subtle d-flex justify-content-between align-items-center">
+                                <span class="tech-used-text"><i class="bi bi-code-square me-1"></i>Lógica & Estructuras</span>
+                                <a href="https://tareas-pendientes-gold.vercel.app/" class="btn-link-project" target="_blank" rel="noopener noreferrer">
+                                  Visitar <i class="bi bi-arrow-right"></i>
+                                </a>
+                              </div>
                             </div>
                         </div>
                     </div>
             
-                    <div class="col">
-                        <div class="img-proyecto2 fondo card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg border-0">
-                            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Hola Mundo
-                                </h3>
-                                <ul class="d-flex list-unstyled mt-auto">
-                                    <li class="me-auto">
-                                        <img src="https://cdn4.iconfinder.com/data/icons/smashicons-file-types-flat/56/22_-_HTML_File_Flat-1024.png" alt="Bootstrap" width="32" height="32"
-                                            class="rounded-circle border border-white">
-                                    </li>
-                                    <li class="d-flex align-items-center">
-                                      <a href="https://primera-pagweb.vercel.app/" class="btn btn-outline-light" target="_blank">Visitar</a>
-                                    </li>
-                                </ul>
+                    <!-- PROYECTO 2 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="project-card glass-card h-100 overflow-hidden d-flex flex-column">
+                            <div class="project-img-wrapper">
+                              <img src="assets/clon-pinterest.jpeg" alt="Estructura de Datos UI Pinterest" class="project-img">
+                              <div class="project-overlay">
+                                <a href="https://pinterest-clone-celestenis.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-light btn-sm rounded-pill px-3">
+                                  <i class="bi bi-box-arrow-up-right me-1"></i> Ver Proyecto
+                                </a>
+                              </div>
+                            </div>
+                            <div class="project-body p-4 d-flex flex-column flex-grow-1">
+                              <div class="project-tags mb-2">
+                                <span class="tag-badge">HTML5</span>
+                                <span class="tag-badge">CSS Grid</span>
+                                <span class="tag-badge">Bootstrap</span>
+                              </div>
+                              <h3 class="project-title fs-4 fw-bold">Estructura UI - Catálogo Visual</h3>
+                              <p class="project-desc text-muted flex-grow-1">
+                                Réplica responsiva inspirada en Pinterest, enfocada en la distribución de elementos multimedia y maquetación de datos visuales.
+                              </p>
+                              <div class="project-footer pt-3 mt-auto border-top border-secondary-subtle d-flex justify-content-between align-items-center">
+                                <span class="tech-used-text"><i class="bi bi-grid-fill me-1"></i>Diseño Frontend (Hobby)</span>
+                                <a href="https://pinterest-clone-celestenis.vercel.app/" class="btn-link-project" target="_blank" rel="noopener noreferrer">
+                                  Visitar <i class="bi bi-arrow-right"></i>
+                                </a>
+                              </div>
                             </div>
                         </div>
                     </div>
             
-                    <div class="col">
-                        <div class="img-proyecto3 fondo card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg border-0">
-                            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Tareas pendientes</h3>
-                                <ul class="d-flex list-unstyled mt-auto">
-                                    <li class="me-auto">
-                                        <img src="https://ictacademy.com.ng/wp-content/uploads/2020/02/92.-JavaScript-logo.png" alt="Bootstrap" width="32" height="32"
-                                            class="rounded-circle border border-white">
-                                    </li>
-                                    <li class="d-flex align-items-center">
-                                      <a href="https://tareas-pendientes-gold.vercel.app/" class="btn btn-outline-light" target="_blank">Visitar</a>
-                                    </li>
-                                </ul>
+                    <!-- PROYECTO 3 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="project-card glass-card h-100 overflow-hidden d-flex flex-column">
+                            <div class="project-img-wrapper">
+                              <img src="assets/hola-mundo.jpg" alt="Hola Mundo Web" class="project-img">
+                              <div class="project-overlay">
+                                <a href="https://primera-pagweb.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-light btn-sm rounded-pill px-3">
+                                  <i class="bi bi-box-arrow-up-right me-1"></i> Ver Proyecto
+                                </a>
+                              </div>
+                            </div>
+                            <div class="project-body p-4 d-flex flex-column flex-grow-1">
+                              <div class="project-tags mb-2">
+                                <span class="tag-badge">Fundamentos Web</span>
+                                <span class="tag-badge">Vercel</span>
+                              </div>
+                              <h3 class="project-title fs-4 fw-bold">Despliegue & Servidores Web</h3>
+                              <p class="project-desc text-muted flex-grow-1">
+                                Proyecto práctico de introducción al alojamiento web, configuración de dominios y ciclo de despliegue continuo en la nube.
+                              </p>
+                              <div class="project-footer pt-3 mt-auto border-top border-secondary-subtle d-flex justify-content-between align-items-center">
+                                <span class="tech-used-text"><i class="bi bi-cloud-check-fill me-1"></i>Infraestructura Básica</span>
+                                <a href="https://primera-pagweb.vercel.app/" class="btn-link-project" target="_blank" rel="noopener noreferrer">
+                                  Visitar <i class="bi bi-arrow-right"></i>
+                                </a>
+                              </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="testimonios" class="container px-4 py-3">
-          <h2 class="pb-2 border-4 border-bottom">Testimonios</h2>
-          <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <!-- Card carousel -->
-              <div class="carousel-item active">
-                <div class="d-flex justify-content-center border-0 bgr">
-                <div class="card border" style="width: 27rem; align-items: center;">
-                  <img src="assets/boy.png" class="rounded-circle card-img-top imgs center" alt="...">
-                  <div class="card-body text-center">
-                    <h5 class="card-title text-center">Jairo Jesús Reyes Jimenéz</h5>
-                    <div class="card-header">
-                      Estudiante del ITT
-                    </div>
-                    <p class="card-text text-center">Es una persona responsable en la que puedes confiar en momentos críticos de los proyectos además es una de las personas que se esfuerza para poder cumplir con lo que se proponga.</p>
-                  </div>
-                </div>
-                </div>
-              </div>
-              <!-- Card -->
-              <div class="carousel-item">
-                <div class="d-flex justify-content-center border-0 bgr">
-                <div class="card border" style="width: 27rem; align-items: center">
-                  <img src="assets/woman.png" class="rounded-circle card-img-top imgs" alt="...">
-                  <div class="card-body text-center">
-                    <h5 class="card-title text-center">Mitzi Ameyalli Ortiz Flores</h5>
-                    <div class="card-header">
-                      Estudiante del ITT
-                    </div>
-                    <p class="card-text text-center">Es alguien dispuesta a tomar las riendas si es necesario y siempre está dispuesta a brindar su apoyo a los demas, a si mismo, está dispuesta a recibir la opinión y ayuda de las personas que trabajan con ella, es alguien carismática pero muy comprometida y honesta al trabajar con alguien.
-                      Es alguien con quién vale la pena trabajar en equipo porque te brindará apoyo y buenas ideas y así mismo estara dispuesta a recibir propuestas y ayuda.</p>
-                  </div>
-                </div>
-                </div>
-              </div>
-              <!-- card -->
-              <div class="carousel-item">
-                <div class="d-flex justify-content-center border-0 bgr">
-                <div class="card border" style="width: 27rem; align-items: center">
-                  <img src="assets/testimonio-Damian.jpeg" class="rounded-circle card-img-top imgs" alt="...">
-                  <div class="card-body text-center">
-                    <h5 class="card-title text-center">Brandón Damián Juaréz Gonzaléz</h5>
-                    <div class="card-header">
-                      Estudiante del ITT
-                    </div>
-                    <p class="card-text text-center">Durante los últimos años, tuve el privilegio de colaborar con Celeste en diversos proyectos y exposiciones, participando como adjunto en los equipos que ella dirigía. Celeste demostró una notable habilidad para organizar equipos y una capacidad excepcional para adaptarse a cambios inesperados.</p>
-                  </div>
-                </div>
-                </div>
-              </div>
-             
+
+        <!-- SECCIÓN TESTIMONIOS -->
+        <section id="testimonios" class="py-5">
+          <div class="container px-4 py-4">
+            <div class="section-title-wrapper text-center mb-5 reveal">
+              <span class="section-tag">Recomendaciones</span>
+              <h2 class="section-title">Testimonios de Colegas</h2>
+              <div class="title-bar mx-auto"></div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+
+            <div id="testimonialCarousel" class="carousel slide reveal" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <!-- TESTIMONIO 1 -->
+                <div class="carousel-item active">
+                  <div class="d-flex justify-content-center">
+                    <div class="testimonial-card glass-card p-4 p-md-5 text-center position-relative">
+                      <div class="quote-icon"><i class="bi bi-quote"></i></div>
+                      <div class="testimonial-avatar-wrapper mb-3 mx-auto">
+                        <img src="assets/boy.png" class="testimonial-avatar" alt="Jairo Jesús Reyes Jiménez">
+                      </div>
+                      <h4 class="testimonial-name mb-1">Jairo Jesús Reyes Jiménez</h4>
+                      <span class="testimonial-role badge bg-purple-subtle text-purple mb-3">Estudiante del ITT</span>
+                      <p class="testimonial-text fs-6 fst-italic text-light-50">
+                        "Es una persona responsable en la que puedes confiar en momentos críticos de los proyectos. Además, es una de las personas que más se esfuerza para poder cumplir con todo lo que se proponga."
+                      </p>
+                      <div class="stars-rating mt-3 text-warning">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- TESTIMONIO 2 -->
+                <div class="carousel-item">
+                  <div class="d-flex justify-content-center">
+                    <div class="testimonial-card glass-card p-4 p-md-5 text-center position-relative">
+                      <div class="quote-icon"><i class="bi bi-quote"></i></div>
+                      <div class="testimonial-avatar-wrapper mb-3 mx-auto">
+                        <img src="assets/woman.png" class="testimonial-avatar" alt="Mitzi Ameyalli Ortiz Flores">
+                      </div>
+                      <h4 class="testimonial-name mb-1">Mitzi Ameyalli Ortiz Flores</h4>
+                      <span class="testimonial-role badge bg-purple-subtle text-purple mb-3">Estudiante del ITT</span>
+                      <p class="testimonial-text fs-6 fst-italic text-light-50">
+                        "Es alguien dispuesta a tomar las riendas si es necesario y brindar su apoyo a los demás. Carismática, comprometida y muy honesta al trabajar en equipo. Brinda siempre excelentes ideas y apoyo mutuo."
+                      </p>
+                      <div class="stars-rating mt-3 text-warning">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- TESTIMONIO 3 -->
+                <div class="carousel-item">
+                  <div class="d-flex justify-content-center">
+                    <div class="testimonial-card glass-card p-4 p-md-5 text-center position-relative">
+                      <div class="quote-icon"><i class="bi bi-quote"></i></div>
+                      <div class="testimonial-avatar-wrapper mb-3 mx-auto">
+                        <img src="assets/testimonio-Damian.jpeg" class="testimonial-avatar" alt="Brandón Damián Juárez González">
+                      </div>
+                      <h4 class="testimonial-name mb-1">Brandón Damián Juárez González</h4>
+                      <span class="testimonial-role badge bg-purple-subtle text-purple mb-3">Estudiante del ITT</span>
+                      <p class="testimonial-text fs-6 fst-italic text-light-50">
+                        "Durante los últimos años tuve el privilegio de colaborar con Celeste en diversos proyectos. Celeste demostró una notable habilidad para organizar equipos y una capacidad excepcional para adaptarse a cambios inesperados."
+                      </p>
+                      <div class="stars-rating mt-3 text-warning">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- CAROUSEL CONTROLS -->
+              <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                <span class="carousel-control-icon-custom"><i class="bi bi-chevron-left"></i></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                <span class="carousel-control-icon-custom"><i class="bi bi-chevron-right"></i></span>
+                <span class="visually-hidden">Siguiente</span>
+              </button>
+            </div>
           </div>
         </section>     
-        <section id="contacto" class="container px-4 py-3">
-          <h2 class="pb-2 border-4 border-bottom">Contácto</h2>
-            <div class="container my-5">
-                <div class="p-2 text-center rounded-pill shadow-sm fondo-contacto">
-                  <i class="bi bi-envelope icon-habilidades"></i>
-                  <h1 class="text-body-emphasis">¡Contáctame!</h1>
-                  <p class="col-lg-8 mx-auto fs-5 text-muted">
-                    Contactame para iniciar un proyecto de desarrollo web.
-                  </p>
-                  <div class="d-inline-flex gap-2 mb-5">
-                    <a href="mailto:celeztenicolaz@gmail.com">
-                    <button class="btn btn-outline-secondary btn-lg px-4 rounded-pill" type="button">
-                      Contacto
-                    </button>
-                  </a>
-                  </div>
-                </div>
+
+        <!-- SECCIÓN CONTACTO -->
+        <section id="contacto" class="py-5 mb-5">
+          <div class="container px-4">
+            <div class="contact-box glass-card p-5 text-center position-relative overflow-hidden reveal">
+              <div class="contact-icon-bg mb-3">
+                <i class="bi bi-send-fill gradient-icon display-4"></i>
               </div>
+              <h2 class="contact-heading display-6 fw-bold text-white mb-3">¡Hablemos de Oportunidades Laborales!</h2>
+              <p class="col-lg-8 mx-auto fs-5 text-muted mb-4">
+                ¿Buscas una analista de datos junior o soporte técnico comprometido para tu equipo de TI? Ponte en contacto conmigo.
+              </p>
+
+              <!-- CORREO ELECTRÓNICO CON COPIADO RÁPIDO -->
+              <div class="email-box-wrapper d-inline-flex align-items-center gap-3 p-2 px-4 rounded-pill mb-4">
+                <i class="bi bi-envelope-check text-purple fs-5"></i>
+                <span id="emailText" class="fw-semibold text-white">celeztenicolaz@gmail.com</span>
+                <button id="btnCopyEmail" class="btn btn-sm btn-purple-pill" title="Copiar al portapapeles">
+                  <i class="bi bi-copy me-1"></i><span id="copyBtnText">Copiar</span>
+                </button>
+              </div>
+
+              <div class="d-flex justify-content-center gap-3">
+                <a href="mailto:celeztenicolaz@gmail.com" class="btn btn-gradient btn-lg">
+                  <i class="bi bi-envelope-paper-fill me-2"></i>Enviar Mensaje Directo
+                </a>
+              </div>
+            </div>
+          </div>
         </section>
         
     </main>
-    <footer class="py-3 my-4">
-      <ul class="nav justify-content-center border-0">
-          <li class="nav-item"><a href="https://github.com/celestenis" target="_blank" class="nav-link px-2 text-body-secondary"><i class="bi bi-github icon-footer"></i></a></li>
-          <li class="nav-item"><a href="https://www.linkedin.com/in/celestenicolas/" target="_blank" class="nav-link px-2 text-body-secondary"><i class="bi bi-linkedin icon-footer"></i></a></li>
-          <li class="nav-item"><a href="https://www.facebook.com/celeztenicolaz" target="_blank" class="nav-link px-2 text-body-secondary"><i class="bi bi-facebook icon-footer"></i></a></li>
-      </ul>
-      <p class="text-center">Creado por: Celeste Nicolás en el bootcamp de <a href="https://tecnolochicas.mx/">Tecnolochicas PRO</a></p>
+
+    <!-- FOOTER -->
+    <footer class="py-4 border-top border-secondary-subtle custom-footer">
+      <div class="container text-center">
+        <div class="social-links-footer mb-3 d-flex justify-content-center gap-3">
+            <a href="https://github.com/celestenis" target="_blank" rel="noopener noreferrer" class="footer-icon"><i class="bi bi-github"></i></a>
+            <a href="https://www.linkedin.com/in/celestenicolas/" target="_blank" rel="noopener noreferrer" class="footer-icon"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.facebook.com/celeztenicolaz" target="_blank" rel="noopener noreferrer" class="footer-icon"><i class="bi bi-facebook"></i></a>
+        </div>
+        <p class="mb-1 text-muted">Celeste Nicolás Isidro — <strong>Analista de Datos & Soporte Técnico IT</strong></p>
+        <p class="small text-muted mb-0">Egresada del ITT | Tecnolochicas PRO | Nación Hacker Org</p>
+      </div>
     </footer>
 
-<!-- Botón para volver arriba -->
-<button id="botonArriba" title="Volver arriba" class="rounded-5 shadow-lg">
-  <i class="bi bi-arrow-up-circle"></i>
-</button>
+    <!-- BOTÓN VOLVER ARRIBA -->
+    <button id="botonArriba" title="Volver arriba" class="btn-top-floating">
+      <i class="bi bi-arrow-up-short"></i>
+    </button>
 
-<!-- Typewriter -->
-<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-<!-- JavaScript-->
-<script src="main.js"></script>
-<!--Script bootstrap-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- TOAST NOTIFICATION -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3" style="z-index: 1100;">
+      <div id="copyToast" class="toast align-items-center text-bg-dark border-0 shadow-lg" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="d-flex">
+          <div class="toast-body d-flex align-items-center gap-2">
+            <i class="bi bi-check-circle-fill text-success fs-5"></i>
+            <span>¡Correo copiado al portapapeles!</span>
+          </div>
+          <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- TYPEWRITER EFFECT -->
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    
+    <!-- BOOTSTRAP 5 JS BUNDLE -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- MAIN JAVASCRIPT -->
+    <script src="main.js"></script>
 </body>
 </html>
