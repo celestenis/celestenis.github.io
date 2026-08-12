@@ -10,22 +10,22 @@ Bienvenido/a al repositorio oficial de mi **Portafolio Web Profesional**. Este s
 
 ---
 
-## 🌟 Características Principales
+## Características Principales
 
-- 🎨 **Estética Dark Glassmorphism**: Diseño oscuro de alta gama con tarjetas semi-transparentes (`backdrop-filter: blur`), gradientes neón y contraste optimizado para una excelente legibilidad.
-- 📱 **Totalmente Responsive**: Maquetación adaptada para dispositivos móviles, tablets y monitores de escritorio.
-- ⚡ **Interacciones Dinámicas**:
+- **Estética Dark Glassmorphism**: Diseño oscuro de alta gama con tarjetas semi-transparentes (`backdrop-filter: blur`), gradientes neón y contraste optimizado para una excelente legibilidad.
+- **Totalmente Responsive**: Maquetación adaptada para dispositivos móviles, tablets y monitores de escritorio.
+- **Interacciones Dinámicas**:
   - Efecto *Typewriter* animado con rotación de roles profesionales.
   - *Scroll Reveal* suave mediante `IntersectionObserver`.
   - Copiado rápido de correo electrónico al portapapeles con confirmación visual (*Toast*).
   - Indicador pulsante de disponibilidad laboral.
-- 📜 **Sección de Cursos Desplegable (*Collapsible*)**: Bloque interactivo para visualizar certificaciones y formación continua sin saturar la navegación.
+- **Sección de Cursos Desplegable (*Collapsible*)**: Bloque interactivo para visualizar certificaciones y formación continua sin saturar la navegación.
 
 ---
 
-## 🛠️ Tecnologías & Herramientas
+## Tecnologías & Herramientas
 
-### 📊 Análisis de Datos & Soporte IT (Áreas Principales)
+### Análisis de Datos & Soporte IT (Áreas Principales)
 ![SQL](https://img.shields.io/badge/SQL-MySQL-00758F?style=for-the-badge&logo=mysql&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
@@ -33,7 +33,7 @@ Bienvenido/a al repositorio oficial de mi **Portafolio Web Profesional**. Este s
 ![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=power-bi&logoColor=black)
 ![Troubleshooting](https://img.shields.io/badge/Soporte%20IT-Helpdesk-blue?style=for-the-badge&logo=windows&logoColor=white)
 
-### 💻 Web Development & Scripting (Hobby / Habilidad Adicional)
+### Web Development & Scripting (Hobby / Habilidad Adicional)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
@@ -43,7 +43,7 @@ Bienvenido/a al repositorio oficial de mi **Portafolio Web Profesional**. Este s
 
 ---
 
-## 📂 Estructura del Portafolio
+## Estructura del Portafolio
 
 1. **Sobre mí (Hero Section)**: Presentación profesional, descarga directa de CV en PDF, badge de disponibilidad laboral y enlaces a redes.
 2. **Habilidades & Tech Stack**:
